@@ -1,0 +1,34 @@
+<!--utils/context/authorize/authorize.wxml-->
+
+<view class='page_view'>
+
+
+    <view wx:if="{{ type == 'login' }}" class='login_view'>
+        
+        <image class='authorize_img' mode='aspectFit' src='images/authorize.png'></image>
+        <view class='authorize_tip'>请点击<text style='color:#26ab28;'>“微信登录”</text>按钮，进行登录</view>
+        <button class='btn_login' open-type='getUserInfo' bindgetuserinfo="onUserInfo">微信登录</button>
+    </view>
+
+
+    <view wx:if="{{ type == 'authorize' }}" class='authorize_view'>
+        <image class='authorize_img' mode='aspectFit' src='images/authorize.png'></image>
+
+        <view class='authorize_tip'>请点击<text style='color:#26ab28;'>“去授权”</text>按钮，对以下权限进行授权</view>
+
+        <view class='jurisdic_list'>
+            <block wx:for='{{ authorize_list }}' wx:for-index="index" wx:key='{{}}'>
+                <view class='jurisdic_item'>
+                    {{item}}
+                </view>
+                <view wx:if="{{ index < authorize_list.length-1 }}" class='line'></view>
+            </block>
+        </view>
+
+
+        <button class='btn_authorize' open-type='openSetting' bindopensetting="onOpenSetting">去授权</button>
+
+    </view>
+
+
+</view>

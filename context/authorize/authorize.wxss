@@ -1,0 +1,93 @@
+/* utils/context/authorize/authorize.wxss */
+
+page{
+    width: 100%;
+    height: 100%;
+    background: #fafafb;
+}
+
+.page_view{
+    width: 100%;
+    height: 100%;
+}
+
+.login_view{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.authorize_img{
+    width: 300rpx;
+    height: 300rpx;
+}
+
+.btn_login{
+    width: 600rpx;
+    background: #26ab28 !important;
+    color: white;
+
+    margin-top: 20rpx;
+    margin-bottom: 40rpx;
+}
+
+.authorize_view{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.authorize_tip{
+    width: 85%;
+    font-size: 28rpx;
+    text-align: center;
+    color: #999999;
+
+    margin-top: 20rpx;
+    margin-bottom: 40rpx;
+}
+
+
+.jurisdic_list{
+    width: 85%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
+}
+
+.jurisdic_item{
+
+    margin-top: 15rpx;
+    margin-bottom: 15rpx;
+    margin-left: 20rpx;
+
+    font-size: 32rpx;
+}
+
+.line{
+    width: 95%;
+    height: 2rpx;
+
+    background: rgba(0, 0, 0, 0.04);
+    margin-left: 2.5%;
+}
+
+.btn_authorize{
+    width: 85%;
+    background: #26ab28 !important;
+    color: white;
+
+    margin-top: 80rpx;
+    margin-bottom: 40rpx;
+}
